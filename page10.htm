@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Ultimate Avengers 1.jpg" alt="Ultimate Avengers: The Movie (2006)" />
+      <h2>Ultimate Avengers: The Movie (2006)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ultimate-avengers-the-movie-2006/">Download</a>
+       <button onclick="openModal('Ultimate Avengers: The Movie (2006)', 'Earth’s mightiest heroes assemble to face an alien threat in this origin story of the animated Avengers team.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Ultimate Avengers 2.jpg" alt="Ultimate Avengers 2 (2006)" width="50" height="30">
+      <h2>Ultimate Avengers 2 (2006)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ultimate-avengers-2-2006/">Download</a>
+       <button onclick="openModal('Ultimate Avengers 2 (2006)', 'The Avengers reunite to battle a powerful alien invader threatening humanity, testing their unity and strength like never before.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Joseph King of Dreams.jpg" alt="Joseph: King Of Dreams (2000)" width="50" height="30">
+      <h2>Joseph: King Of Dreams (2000)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-joseph-king-of-dreams-2000/">Download</a>
+       <button onclick="openModal('Joseph: King Of Dreams (2000)', 'This animated biblical story follows Joseph, who rises from slave to Pharaoh’s trusted advisor through faith, dreams, and forgiveness.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Dogman.jpg" alt="Dog Man (2025)" width="50" height="30">
+      <h2>Dog Man (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-dog-man-2025/">Download</a>
+       <button onclick="openModal('Dog Man (2025)', 'Half dog, half cop, all hero! Dog Man battles crime and chaos in this animated adaptation of the hit graphic novel series.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Mufasa.jpg" alt="Mufasa: The Lion King (2024)" width="50" height="30">
+      <h2>Mufasa: The Lion King (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-mufasa-the-lion-king-2024/">Download</a>
+       <button onclick="openModal('Mufasa: The Lion King (2024)', 'Explore Mufasa’s origin story and journey from orphan cub to king of the Pride Lands in this majestic Lion King prequel.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Giants of La Mancha.jpg" alt="Giants Of La Mancha (2024)" width="50" height="30">
+      <h2>Giants Of La Mancha (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-giants-of-la-mancha-2024/">Download</a>
+       <button onclick="openModal('Giants Of La Mancha (2024)', 'A spirited boy inspired by Don Quixote defends his town from disaster with imagination, bravery, and the help of mechanical giants.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page9.htm">&laquo; Prev</a>
+  <a href="page11.htm">11</a>
+  <a href="page12.htm">12</a>
+  <a href="page13.htm">13</a>
+  <a href="page11.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+

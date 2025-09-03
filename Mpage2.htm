@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Blade-II.jpg" alt="Blade 2" />
+      <h2>Blade 2</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-blade-2-2002/">Download</a>
+      <button onclick="openModal('Blade 2', 'A rare mutation gives birth to a new vampire community called the Reapers, who attack both humans and vampires. Blade, along with an elite vampire force, is asked to wipe out the Reaper’s population')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Blade-Trinity.jpg" alt="Blade 3" width="50" height="30">
+      <h2>Blade 3</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-blade-trinity-2004-hollywood-movie-action/">Download</a>
+      <button onclick="openModal('Blade 3', 'For years, Blade has fought against the vampires in the cover of the night. But now, after falling into the crosshairs of the FBI, he is forced out into the daylight, where he is driven to join forces with a clan of human vampire hunters he never knew existed — The Nightstalkers.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Ace Ventura 1994.jpg" alt="Ace Ventura (1994)" width="50" height="30">
+      <h2>Ace Ventura (1994)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ace-ventura-pet-detective-1994/">Download</a>
+      <button onclick="openModal('Ace Ventura (1994)', 'He’s the best there is! (Actually, he’s the only one there is.) He’s Ace Ventura: Pet Detective. Jim Carrey is on the case to find the Miami Dolphins’ missing mascot and quarterback Dan Marino.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Ace Ventura 1995.jpg" alt="Ace Ventura (1995)" width="50" height="30">
+      <h2>Ace Ventura (1995)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ace-ventura-when-nature-calls-1995/">Download</a>
+      <button onclick="openModal('Ace Ventura (1995)', 'New animals. New adventures. Same hair. Summoned from an ashram in Tibet, Ace finds himself on a perilous journey into the jungles of Africa to find Shikaka, the missing sacred animal of the friendly Wachati tribe.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Ace Ventura Jr.jpg" alt="Ace Ventura Jr: Pet Detective (2009)" width="50" height="30">
+      <h2>Ace Ventura Jr: Pet Detective (2009)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ace-ventura-jr-pet-detective-2009/">Download</a>
+      <button onclick="openModal('Ace Ventura Jr: Pet Detective (2009)', '“I will try to be normal” 12-year-old Ace Ventura Jr. promises.Thats cool, except whats normal for him is finding missing mutts, kidnapped kitties or gone gators and creating hilarious chaos every step of the way.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Green Bones.webp" alt="Green Bones (2024)" width="50" height="30">
+      <h2>Green Bones (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-green-bones-2024/">Download</a>
+      <button onclick="openModal('Green Bones (2024)', 'A soon-to-be released criminal and a corrections officer is still grieving over the death of his sister opposing the prisoner’s release.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Movies.htm">&laquo; Prev</a>
+  <a href="Mpage2.htm">2</a>
+  <a href="Mpage3.htm">3</a>
+  <a href="Mpage4.htm">4</a>
+  <a href="Mpage3.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

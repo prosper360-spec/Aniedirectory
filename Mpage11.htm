@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Revenge Of THe Boogeyman.jpg" alt="The Revenge of the Boogeyman (2025)" />
+      <h2>The Revenge of the Boogeyman (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-revenge-of-the-boogeyman-2025/">Download</a>
+      <button onclick="openModal('The Revenge of the Boogeyman (2025)', 'A group of friends take their recently sober friend, to the remote Hills to help him stay clean. But when eerie events unfold and people start disappearing, they must question whether it’s the Boogeyman or their own unraveling minds.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Escape From 21st Century.jpg" alt="Escape From The 21st Century (2024)" width="50" height="30">
+      <h2>Escape From The 21st Century (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-escape-from-the-21st-century-2024/">Download</a>
+      <button onclick="openModal('Escape From The 21st Century (2024)', 'Three friends discover that they have the power to travel back and forth 20 years with a sneeze. However, the future is not as good as they hope, and they need to take on the responsibility of saving the world.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="The Escape 3 Final escape.jpg" alt="The Escape 3: The Final Escape (2024)" width="50" height="30">
+      <h2>The Escape 3: The Final Escape (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-escapee-3-the-final-escape-2024/">Download</a>
+      <button onclick="openModal('The Escape 3: The Final Escape (2024)', 'After a night of gun crime and violence, Casey Roberts realises her world is not as it seems with a shocking revelation. This is her final escape.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Resident Evil Final Chapter.jpg" alt="Resident Evil: The Final Chapter (2016)" width="50" height="30">
+      <h2>Resident Evil: The Final Chapter (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-resident-evil-the-final-chapter-2016/">Download</a>
+      <button onclick="openModal('Resident Evil: The Final Chapter (2016)', 'Picking up immediately after the events in Resident Evil: Retribution, Alice is the only survivor of what was meant to be humanity’s final stand against the undead.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Viridian.jpg" alt="Viridian (2025)" width="50" height="30">
+      <h2>Viridian (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-viridian-2025/">Download</a>
+      <button onclick="openModal('Viridian (2025)', 'A family hunting trip goes awry when a stranger in the woods is accidentally shot. As each family member denies responsibility, they begin to suspect that it wasn’t an accident after all.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Night Guards (2016).jpg" alt="Night Guards (2016)" width="50" height="30">
+      <h2>Night Guards (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-night-guards-2016/">Download</a>
+      <button onclick="openModal('Night Guards (2016)', 'When eighteen-year-old Pasha rescues a beautiful young woman from a band of strangely powerful attackers, he discovers an underworld of supernatural beings living among us.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage10.htm">&laquo; Prev</a>
+  <a href="Mpage11.htm">11</a>
+  <a href="Mpage12.htm">12</a>
+  <a href="Mpage13.htm">13</a>
+  <a href="Mpage12.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Accountant 2016.jpg" alt="The Accountant (2016)" />
+      <h2>The Accountant (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-accountant-2016/">Download</a>
+      <button onclick="openModal('The Accountant (2016)', 'As a math savant uncooks the books for a new client, the Treasury Department closes in on his activities and the body count starts to rise.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Accountant 2.jpg" alt="The Accountant 2 (2025)" width="50" height="30">
+      <h2>The Accountant 2 (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-accountant-2-2025/">Download</a>
+      <button onclick="openModal('The Accountant 2 (2025)', 'When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Captain America Civil War.jpg" alt="Captain America: Civil War (2016)" width="50" height="30">
+      <h2>Captain America: Civil War (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-captain-america-civil-war-2016/">Download</a>
+      <button onclick="openModal('Captain America: Civil War (2016)', 'Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This would lead to a disagreement within the Avengers.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Off The Grid.jpg" alt="Off The Grid (2025)" width="50" height="30">
+      <h2>Off The Grid (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-off-the-grid-2025/">Download</a>
+      <button onclick="openModal('Off The Grid (2025)', 'After a morally-bankrupt company tries to weaponize a brilliant scientist’s revolutionary technology, he goes off the grid to safeguard humanity. When the company sends a strike force to find him, they make their biggest mistake of all – they weaponize the man they are trying to catch.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Shadow Force 2025.jpg" alt="Shadow Force (2025)" width="50" height="30">
+      <h2>Shadow Force (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-shadow-force-2025/">Download</a>
+      <button onclick="openModal('Shadow Force (2025)', 'Kyrah and Isaac were once the leaders of a multinational special forces group called Shadow Force. They broke the rules by falling in love, and in order to protect their son, they go underground.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Eternal Bond.webp" alt="Eternal Bond (2025)" width="50" height="30">
+      <h2>Eternal Bond (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-eternal-bond-2025/">Download</a>
+      <button onclick="openModal('Eternal Bond (2025)', 'Amid the trauma of war, a young woman and a resistance fighter confront a series of mysterious deaths and a terrifying supernatural force.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage8.htm">&laquo; Prev</a>
+  <a href="Mpage9.htm">9</a>
+  <a href="Mpage10.htm">10</a>
+  <a href="Mpage11.htm">11</a>
+  <a href="Mpage10.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

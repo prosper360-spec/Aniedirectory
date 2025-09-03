@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="The Prince Of Egypt.jpg" alt="The Prince Of Egypt (1998)" />
+      <h2>The Prince Of Egypt (1998)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-prince-of-egypt-1998/">Download</a>
+       <button onclick="openModal('The Prince Of Egypt (1998)', 'An epic biblical tale of Moses, raised as a prince of Egypt who discovers his true heritage and leads his people to freedom.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Memoir of a Snail.jpg" alt="Memoir Of a Snail (2024)" width="50" height="30">
+      <h2>Memoir Of a Snail (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-memoir-of-a-snail-2024/">Download</a>
+       <button onclick="openModal('Memoir Of a Snail (2024)', 'A timid snail with a passion for writing journeys beyond the garden for the first time, capturing life’s quiet beauty in her journal.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Legend of Muay Thai.jpg" alt="The Legend Of Muay Thai: 9 Satra (2018)" width="50" height="30">
+      <h2>The Legend Of Muay Thai: 9 Satra (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-legend-of-muay-thai-9-satra-2018/">Download</a>
+       <button onclick="openModal('The Legend Of Muay Thai: 9 Satra (2018)', 'A young fighter trains in ancient Muay Thai to reclaim his homeland from a cruel tyrant in this visually rich action tale.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Coraline.jpg" alt="Coraline (2009)" width="50" height="30">
+      <h2>Coraline (2009)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-coraline-2009/">Download</a>
+       <button onclick="openModal('Coraline (2009)', 'Coraline discovers a secret door to an alternate world that seems perfect—until it reveals a dark and sinister truth.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Throne of Elves.jpg" alt="Throne of Elves (2016)" width="50" height="30">
+      <h2>Throne of Elves (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-throne-of-elves-2016/">Download</a>
+       <button onclick="openModal('Throne of Elves (2016)', 'Elven kingdoms clash as a dark queen seeks power through a magical ring, and a young hero must rise to save his world.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Watchmen Chapter 2.jpg" alt="Watchmen Chapter II (2024)" width="50" height="30">
+      <h2>Watchmen Chapter II (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-watchmen-chapter-ii-2024/">Download</a>
+       <button onclick="openModal('Watchmen Chapter II (2024)', 'In a divided world, a new chapter unfolds as masked heroes grapple with moral ambiguity, legacy, and the truth behind power.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page13.htm">&laquo; Prev</a>
+  <a href="page15.htm">15</a>
+  <a href="page16.htm">16</a>
+  <a href="page17.htm">17</a>
+  <a href="page16.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

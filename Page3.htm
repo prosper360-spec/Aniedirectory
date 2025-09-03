@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="How To Train Your Dragon 1.jpg" alt="How to Train Your Dragon (2010)" />
+      <h2>How to Train Your Dragon (2010)</h2>
+      <a href="https://wildshare.net/030578f7f99ae48b">Download</a>
+       <button onclick="openModal('How to Train Your Dragon (2010)', 'A young Viking defies tradition and forms a life-changing friendship with a wounded dragon, challenging his tribe’s beliefs in this epic coming-of-age tale.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Tain Your Dragon 2.jpg" alt="How To Train Your Dragon 2" width="50" height="30">
+      <h2>How To Train Your Dragon 2</h2>
+      <a href="https://wildshare.net/fd3150717180a7db">Download</a>
+       <button onclick="openModal('How To Train Your Dragon 2', 'As Hiccup and Toothless discover a secret ice cave full of wild dragons, they must stand together against a powerful new enemy threatening their peaceful home.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Train Dragon 3.jpg" alt="How to Train Your Dragon: The Hidden World" width="50" height="30">
+      <h2>How to Train Your Dragon: The Hidden World</h2>
+      <a href="https://wildshare.net/d908cd82ea338bec">Download</a>
+       <button onclick="openModal('How to Train Your Dragon: The Hidden World', 'When danger strikes Berk, Hiccup and Toothless venture to a mythical hidden world, where they face the ultimate test of courage and friendship')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Lost In Starlight.jpg" alt="Lost In Starlight (2025)" width="50" height="30">
+      <h2>Lost In Starlight 2025</h2>
+      <a href="https://wildshare.net/58bb577f9da867c2">Download</a>
+       <button onclick="openModal('Lost In Starlight 2025', 'Two teens from rival planets find themselves stranded in space, where their journey for survival becomes a story of connection, mystery, and cosmic wonder.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="The King Of Kings.jpg" alt="The King Of Kings 2025" width="50" height="30">
+      <h2>The King Of Kings 2025</h2>
+      <a href="https://wildshare.net/1cfadfc66fd85ad5">Download</a>
+       <button onclick="openModal('The King Of Kings 2025', 'An animated reimagining of the life of Jesus Christ, this film follows his journey from humble birth to divine destiny in a powerful tale of faith and sacrifice.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="White Snake Afloat.jpg" alt="The White Snake: Afloat (2024)" width="50" height="30">
+      <h2>The White Snake: Afloat (2024)</h2>
+      <a href="https://wildshare.net/74e4e9f1126da0ae">Download</a>
+       <button onclick="openModal('The White Snake: Afloat (2024)', 'In this fantasy romance, a magical white snake spirit returns to the mortal realm, reigniting a forbidden love and battling forces determined to keep them apart.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="page2.htm">&laquo; Prev</a>
+  <a href="page2.htm">2</a>
+  <a href="page3.htm">3</a>
+  <a href="page4.htm">4</a>
+  <a href="page4.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

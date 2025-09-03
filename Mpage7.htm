@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Venom 2005.jpg" alt="Venom (2005)" />
+      <h2>Venom (2005)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-venom-2005/">Download</a>
+      <button onclick="openModal('Venom (2005)', 'He never hurt a soul until the day he died. A group of teenagers fear for their lives in the swamps of Louisiana, chased by Mr. Jangles, a man possessed by 13 evil souls, and now relentless in his pursuit of new victims.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Deep Cover.jpg" alt="Deep Cover (2025)" width="50" height="30">
+      <h2>Deep Cover (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-deep-cover-2025/">Download</a>
+      <button onclick="openModal('Deep Cover (2025)', 'Kat is an improv comedy teacher beginning to question if she’s missed her shot at success. When an undercover cop offers her the role of a lifetime, she recruits two of her students to infiltrate London’s gangland by impersonating dangerous criminals.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Ground Zero.webp" alt="Ground Zero (2025)" width="50" height="30">
+      <h2>Ground Zero (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ground-zero-2025/">Download</a>
+      <button onclick="openModal('Ground Zero (2025)', 'An Indian army officer embarks on a mission leading to India’s most successful counter-terrorism operation in history.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Built 2 Kill.jpg" alt="Built 2 Kill (2023)" width="50" height="30">
+      <h2>Built 2 Kill (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-built-2-kill-2023/">Download</a>
+      <button onclick="openModal('Built 2 Kill (2023)', 'Continuing the cutting edge tales of feminist-horror from the original “Built to Kill”, this amped-up epic sequel pushes even more philosophical boundaries in the realm of horror, gore, comedy, action, and thrills, courtesy of leading independent filmmakers from France, Canada, and the USA, includes “No More God in Doctor”, “Those Who Can Die”, and “Nuke Them All”.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Project A 1.jpg" alt="Project A (1983)" width="50" height="30">
+      <h2>Project A (1983)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-project-a-1983/">Download</a>
+      <button onclick="openModal('Project A (1983)', 'In late 19th century Hong Kong, the British may rule the land, but the pirates rule the waters. Coast Guard officer Dragon Ma is determined that his beloved Coast Guard will not be made a fool of.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Project A 2.jpg" alt="Project A part II (1987)" width="50" height="30">
+      <h2>Project A part II (1987)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-project-a-part-ii-1987/">Download</a>
+      <button onclick="openModal('Project A part II (1987)', 'Dragon is now transferred to be the police head of Sai Wan district, and has to contend with a gangster kingpin, anti-Manchu revolutionaries, some runaway pirates, Manchu Loyalists and a corrupt police superintendent.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage6.htm">&laquo; Prev</a>
+  <a href="Mpage7.htm">7</a>
+  <a href="Mpage8.htm">8</a>
+  <a href="Mpage9.htm">9</a>
+  <a href="Mpage8.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

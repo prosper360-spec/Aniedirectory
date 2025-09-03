@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Sonic 3.jpg" alt="Sonic The Hedgehog  3 (2024)" />
+      <h2>Sonic The Hedgehog  3 (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sonic-the-hedgehog-3-2024/">Download</a>
+      <button onclick="openModal('Sonic The Hedgehog  3 (2024)', 'Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Sonic The Hedgehog.jpg" alt="Sonic The Hedgehog (2020)" width="50" height="30">
+      <h2>Sonic The Hedgehog (2020)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sonic-the-hedgehog-2020/">Download</a>
+      <button onclick="openModal('Sonic The Hedgehog (2020)', 'Powered with incredible speed, Sonic The Hedgehog embraces his new home on Earth. That is, until Sonic sparks the attention of super-uncool evil genius Dr. Robotnik. Now it’s super-villain vs. super-sonic in an all-out race across the globe to stop Robotnik from using Sonic’s unique power for world domination.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Alita batlle angel.jpg" alt="Alita: Battle Angel (2019)" width="50" height="30">
+      <h2>Alita: Battle Angel (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-alita-battle-angel-2019/">Download</a>
+      <button onclick="openModal('Alita: Battle Angel (2019)', 'When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Sonic2.jpg" alt="Sonic The Hedgehog 2 (2022)" width="50" height="30">
+      <h2>Sonic The Hedgehog 2 (2022)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sonic-the-hedgehog-2-2022/">Download</a>
+      <button onclick="openModal('Sonic The Hedgehog 2 (2022)', 'After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Spider-Man Far from Home.jpg" alt="Spider-Man: Far From Home (2019)" width="50" height="30">
+      <h2>Spider-Man: Far From Home (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-spider-man-far-from-home-2019/">Download</a>
+      <button onclick="openModal('Spider-Man: Far From Home (2019)', 'Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest – Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Deadpool 2.jpg" alt="Deadpool 2 (2018)" width="50" height="30">
+      <h2>Deadpool 2 (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-deadpool-2-hollywood-movie-2018-action">Download</a>
+      <button onclick="openModal('Deadpool 2 (2018)', 'After fighting organized crime as the wisecracking mercenary Deadpool for two years, Wade Wilson fails to kill one of his targets on his anniversary with his girlfriend Vanessa. That night, after the pair decides to start a family together, the target tracks Wade down and inadvertently kills Vanessa.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage4.htm">&laquo; Prev</a>
+  <a href="Mpage5.htm">5</a>
+  <a href="Mpage6.htm">6</a>
+  <a href="Mpage7.htm">7</a>
+  <a href="Mpage6.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

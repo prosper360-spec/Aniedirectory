@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Snow White and Huntsman.jpg" alt="Snow White and The Huntsman (2012)" />
+      <h2>Snow White and The Huntsman (2012)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-snow-white-and-the-huntsman-2012/">Download</a>
+      <button onclick="openModal('Snow White and The Huntsman (2012)', 'The fairytale is over. After the Evil Queen marries the King, she performs a violent coup in which the King is murdered and his daughter, Snow White, is taken captive. Almost a decade later, a grown Snow White is still in the clutches of the Queen. In order to obtain immortality, The Evil Queen needs the heart of Snow White. After Snow escapes the castle, the Queen sends the Huntsman to find her in the Dark Forest.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Avengers 1.jpg" alt="Avengers (2012)" width="50" height="30">
+      <h2>Avengers (2012)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-avengers-2012/">Download</a>
+      <button onclick="openModal('Avengers (2012)', 'When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Jack 2025.jpg" alt="Jack (2025)" width="50" height="30">
+      <h2>Jack (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-jack-2025/">Download</a>
+      <button onclick="openModal('Jack (2025)', 'An unconventional anti-terrorist operative must defy his bosses in order to foil a devastating attack on his nation.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Path of Totality.jpg" alt="The Path of Totality (2024)" width="50" height="30">
+      <h2>The Path of Totality (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-path-of-totality-2024/">Download</a>
+      <button onclick="openModal('The Path of Totality (2024)', 'Infusing the contained thriller with the outsized energy of pulp mystery, The Path of Totality follows Grayson Lee – a man condemned to death for a crime he doesn’t remember – through the last eight hours of his life')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Kraven The Hunter.jpg" alt="Kraven The Hunter (2024)" width="50" height="30">
+      <h2>Kraven The Hunter (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-kraven-the-hunter-2024/">Download</a>
+      <button onclick="openModal('Kraven The Hunter (2024)', 'Kraven Kravinoff’s complex relationship with his ruthless gangster father, Nikolai, starts him down a path of vengeance with brutal consequences, motivating him to become not only the greatest hunter in the world, but also one of its most feared')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="City Hunter.webp" alt="City Hunter (2024)" width="50" height="30">
+      <h2>City Hunter (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-city-hunter-2024/">Download</a>
+      <button onclick="openModal('City Hunter (2024)', 'An exceptional marksman and hopeless playboy, private eye Ryo Saeba reluctantly forms an alliance with his late partner’s sister to investigate his death.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage13.htm">&laquo; Prev</a>
+  <a href="Mpage14.htm">14</a>
+  <a href="Mpage15.htm">15</a>
+  <a href="Mpage16.htm">16</a>
+  <a href="Mpage15.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

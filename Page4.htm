@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Lulu.jpg" alt="Lulu is a Rhinoceros" />
+      <h2>Lulu is a Rhinoceros</h2>
+      <a href=" https://wildshare.net/01e353e0faa71b6f">Download</a>
+       <button onclick="openModal('Lulu is a Rhinoceros', 'Lulu the bulldog believes she’s truly a rhinoceros. Embarking on a fun, heartwarming quest to be accepted, she shows that being yourself is the bravest thing of all.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Transylvania 1.jpg" alt="Hotel Transylvania (2012)" width="50" height="30">
+      <h2>Hotel Transylvania (2012)</h2>
+      <a href="https://wildshare.net/0150162244b92d43">Download</a>
+       <button onclick="openModal('Hotel Transylvania (2012)', 'Count Dracula runs a luxury hotel for monsters, but things spiral when a human boy stumbles in and falls for his daughter, disrupting the monster-only sanctuary.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Hotel 2.jpg" alt="Hotel Transylvania 2 (2015)" width="50" height="30">
+      <h2>Hotel Transylvania 2 (2015)</h2>
+      <a href="https://wildshare.net/f6481642d24da3a0">Download</a>
+       <button onclick="openModal('Hotel Transylvania 2 (2015)', 'Drac tries to bring out the monster in his half-human grandson, but a family visit turns chaos when old-school vampire Vlad drops by unexpectedly.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Hotel 3.jpg" alt="Hotel Transylvania 3:Summer Vacation (2018)" width="50" height="30">
+      <h2>Hotel Transylvania 3:Summer Vacation (2018)</h2>
+      <a href="https://wildshare.net/f7e6a0b376f8b54f">Download</a>
+       <button onclick="openModal('Hotel Transylvania 3:Summer Vacation (2018)', 'Drac and his monster crew board a luxury cruise for a much-needed break, only to face danger when he falls for the ship’s mysterious captain.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Hotel 4.jpg" alt="Hotel Transylvania 4: Transformania" width="50" height="30">
+      <h2>Hotel Transylvania 4: Transformania</h2>
+      <a href="https://wildshare.net/cd46184ba64a5146">Download</a>
+       <button onclick="openModal('Hotel Transylvania 4: Transformania', 'A gadget gone wrong switches monsters into humans and vice versa. Drac and friends must race to reverse the transformation before it becomes permanent.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Rose of Varsailles.jpg" alt="Rose of Varsailles" width="50" height="30">
+      <h2>Rose of Varsailles</h2>
+      <a href="https://wildshare.net/8b14498c6d8dc7f2">Download</a>
+       <button onclick="openModal('Rose of Varsailles', 'Set during the French Revolution, this historical anime follows Lady Oscar, a woman raised as a man in the royal guard, as she navigates love, duty, and rebellion.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page3.htm">&laquo; Prev</a>
+  <a href="page2.htm">2</a>
+  <a href="page3.htm">3</a>
+  <a href="page4.htm">4</a>
+  <a href="page5.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

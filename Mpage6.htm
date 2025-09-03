@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Deadpool 2016.jpeg" alt="Deadpool (2016)" />
+      <h2>Deadpool (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-deadpool-2016-action/">Download</a>
+      <button onclick="openModal('Deadpool (2016)', 'Wade Wilson is a dishonorably discharged special forces operative working as a mercenary when he meets Vanessa, a prostitute. They become romantically involved, and a year later she accepts his marriage proposal. Wilson is diagnosed with terminal cancer, and leaves Vanessa without warning so she will not have to watch him die. A mysterious recruiter approaches Wilson, offering an experimental cure for his cancer.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Once-Upon-A-Deadpool.jpg" alt="Once Upon a Deadpool (2018)" width="50" height="30">
+      <h2>Once Upon a Deadpool (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-once-upon-a-deadpool-hollywood-movie-action/">Download</a>
+      <button onclick="openModal('Once Upon a Deadpool (2018)', 'Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of fellow rogues to protect a young boy from the brutal, time-traveling mutant, Cable. Wisecracking mercenary Deadpool meets Russell, an angry teenage mutant who lives at an orphanage.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Deadpool Vs Wolverine.webp" alt="Deadpool & Wolverine (2024)" width="50" height="30">
+      <h2>Deadpool & Wolverine (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-deadpool-wolverine-2024/">Download</a>
+      <button onclick="openModal('Deadpool & Wolverine (2024)', 'A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Red Notice.jpg" alt="Red Notice (2021)" width="50" height="30">
+      <h2>Red Notice (2021)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-red-notice-2021/">Download</a>
+      <button onclick="openModal('Red Notice (2021)', 'An Interpol-issued Red Notice is a global alert to hunt and capture the world’s most wanted. But when a daring heist brings together the FBI’s top profiler and two rival criminals, there’s no telling what will happen.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Venom Last Dance.jpg" alt="Venom: The Last Dance (2024)" width="50" height="30">
+      <h2>Venom: The Last Dance (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-venom-the-last-dance-2024/">Download</a>
+      <button onclick="openModal('Venom: The Last Dance (2024)', 'Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie’s last dance.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Return to Wickensburg.jpg" alt="Return to Wickensburg (2024)" width="50" height="30">
+      <h2>Return to Wickensburg (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-return-to-wickensburg-2024/">Download</a>
+      <button onclick="openModal('Return to Wickensburg (2024)', 'Mr. Hexenmeister has escaped from prison, and once again threatens Wickensburg. It’s a race against time to find an ancient orb, capable of destroying the entire town, before it falls into the wrong hands.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage5.htm">&laquo; Prev</a>
+  <a href="Mpage6.htm">6</a>
+  <a href="Mpage7.htm">7</a>
+  <a href="Mpage8.htm">8</a>
+  <a href="Mpage7.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

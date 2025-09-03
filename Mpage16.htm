@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Waves Of Madness.jpg" alt="Waves of Madness (2024)" />
+      <h2>Waves of Madness (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-waves-of-madness-2024/">Download</a>
+      <button onclick="openModal('Waves of Madness (2024)', 'A special agent is dispatched to investigate a distress call from an ocean liner, only to find the ship eerily abandoned and haunted by a malevolent force that twists sanity into terror.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Armed 2025.jpg" alt="Armed (2025)" width="50" height="30">
+      <h2>Armed (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-armed-2025/">Download</a>
+      <button onclick="openModal('Armed (2025)', 'A group of veteran marines steal a shipment of weapons from the military only to find a cold war era robot that hunts them down, determined to complete its mission. Nothing can stop this deadly killing machine.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Warlord 2025.jpg" alt="Warlord (2025)" width="50" height="30">
+      <h2>Warlord (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-warlord-2025/">Download</a>
+      <button onclick="openModal('Warlord (2025)', 'A human fight for survival. An elven war for justice. Revolt is on the horizon in the ancient city of Lloris, ruled with an iron fist by the merciless Sheriff and The Brute. Believing their mystical powers could help free the oppressed citizens from tyranny, a young human seeks out the aid of the reclusive elves and their legendary Warlord.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Havoc 2025.jpg" alt="Havoc (2025)" width="50" height="30">
+      <h2>Havoc (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-havoc-2025/">Download</a>
+      <button onclick="openModal('Havoc (2025)', 'When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city’s criminal underworld to save a politician’s son.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Mob Cops.jpg" alt="Mob Cops (2025)" width="50" height="30">
+      <h2>Mob Cops (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-mob-cops-2025/">Download</a>
+      <button onclick="openModal('Mob Cops (2025)', 'When a retired NYPD detective writes a book about his family’s ties to the mob, it ignites a firestorm between the dirty cops working for the city’s brutal crime boss and the officers trying to bring them to justice.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Freaky Tales 2025.jpg" alt="Freaky Tales (2025)" width="50" height="30">
+      <h2>Freaky Tales (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-freaky-tales-2025/">Download</a>
+      <button onclick="openModal('Freaky Tales (2025)', 'In 1987 Oakland, a mysterious force guides The Town’s underdogs in four interconnected tales: teen punks defend their turf against Nazi skinheads, a rap duo battles for hip-hop immortality, a weary henchman gets a shot at redemption, and an NBA All-Star settles the score')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage15.htm">&laquo; Prev</a>
+  <a href="Mpage16.htm">16</a>
+  <a href="Mpage17.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

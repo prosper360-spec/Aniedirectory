@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Buffallo Kids.jpg" alt="Buffalo Kids (2024)" />
+      <h2>Buffalo Kids (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-buffalo-kids-2024/">Download</a>
+       <button onclick="openModal('Buffalo Kids (2024)', 'Young adventurers and talking animals unite to save the Wild West from outlaws in this animated tale of courage and fun')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Sirrocco.jpg" alt="Sirocco and The Kingdom of Winds (2023)" width="50" height="30">
+      <h2>Sirocco and The Kingdom of Winds (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sirocco-and-the-kingdom-of-winds-2023/">Download</a>
+       <button onclick="openModal('Sirocco and The Kingdom of Winds (2023)', 'Two sisters are swept into a fantastical world ruled by the wind, where they must find each other and a way home.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Batman Under The Red Hood.jpg" alt="Batman Under The Red Hood (2010)" width="50" height="30">
+      <h2>Batman Under The Red Hood (2010)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-batman-under-the-red-hood-2010/">Download</a>
+       <button onclick="openModal('Batman Under The Red Hood (2010)', 'Batman faces a deadly new vigilante with a shocking identity in one of DC’s darkest and most emotional animated films.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Justice League Vs Teen Titans.jpg" alt="Justice League Vs. Teen Titans (2016)" width="50" height="30">
+      <h2>Justice League Vs. Teen Titans (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-justice-league-vs-teen-titans-2016/">Download</a>
+       <button onclick="openModal('Justice League Vs. Teen Titans (2016)', 'When demonic forces possess the Justice League, it’s up to the Teen Titans to rise and save their mentors—and the world')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Suoerman Unbound.jpg" alt="Superman Unbound (2013)" width="50" height="30">
+      <h2>Superman Unbound (2013)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-superman-unbound-2013/">Download</a>
+       <button onclick="openModal('Superman Unbound (2013)', 'Superman confronts the villainous Brainiac, a collector of worlds, in a high-stakes battle for Earth’s future.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="SuperClause.jpg" alt="SuperKlause (2024)" width="50" height="30">
+      <h2>SuperKlause (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-superklaus-2024/">Download</a>
+       <button onclick="openModal('SuperKlause (2024)', 'Santa’s secret alter ego, SuperKlaus, must save the North Pole from a tech-savvy villain in this holiday-themed superhero romp.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page11.htm">&laquo; Prev</a>
+  <a href="page13.htm">13</a>
+  <a href="page14.htm">14</a>
+  <a href="page15.htm">15</a>
+  <a href="page13.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

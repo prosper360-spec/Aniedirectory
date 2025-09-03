@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Day the Earth Blew Up.jpg" alt="The Day The Earth Blew Up: A Looney Toon Movie (2024)" />
+      <h2>The Day The Earth Blew Up: A Looney Toon Movie (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-day-the-earth-blew-up-a-looney-tunes-movie-2024/">Download</a>
+       <button onclick="openModal('The Day The Earth Blew Up: A Looney Toon Movie (2024)', 'Daffy and Porky must stop an alien invasion in this zany, explosive adventure that brings classic Looney Tunes chaos to global stakes.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Boxtrolls.jpg" alt="The Boxtrolls (2014)" width="50" height="30">
+      <h2>The Boxtrolls (2014)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-boxtrolls-2014/">Download</a>
+       <button onclick="openModal('The Boxtrolls (2014)', 'Raised by quirky underground creatures, a human boy must save his oddball family from an evil exterminator in a steampunk world.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Gracie and Pedro.jpg" alt="Gracie and Pedro: Pets to The Rescue (2024)" width="50" height="30">
+      <h2>Gracie and Pedro: Pets to The Rescue (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-gracie-pedro-pets-to-the-rescue-2024/">Download</a>
+       <button onclick="openModal('Gracie and Pedro: Pets to The Rescue (2024)', 'A clever cat and brave dog team up to save their family in a tail-wagging adventure full of heart, humor, and heroics.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="MHA.jpg" alt="My Hero Academia: You’re Next (2024)" width="50" height="30">
+      <h2>My Hero Academia: You’re Next (2024)</h2>
+      <a href=" https://vdl.np-downloader.com/sdm_downloads/download-my-hero-academia-youre-next-2024/">Download</a>
+       <button onclick="openModal('My Hero Academia: You’re Next (2024)', 'Class 1-A faces their greatest test yet when a new villain threatens society’s future, and the next generation of heroes must rise.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Ne Zha.jpg" alt="Ne Zha (2019)" width="50" height="30">
+      <h2>Ne Zha (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ne-zha-2019-action/">Download</a>
+       <button onclick="openModal('Ne Zha (2019)', 'Born of fire and chaos, Ne Zha must defy fate and prove his worth in a visually stunning mythological epic from Chinese legend.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Green Snake.jpg" alt="Green Snake (2021)" width="50" height="30">
+      <h2>Green Snake (2021)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-green-snake-2021/">Download</a>
+       <button onclick="openModal('Green Snake (2021)', 'Following the events of White Snake, Green Snake embarks on a soul-searching quest through a dystopian city to rescue her sister.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page10.htm">&laquo; Prev</a>
+  <a href="page12.htm">12</a>
+  <a href="page13.htm">13</a>
+  <a href="page14.htm">14</a>
+  <a href="page12.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

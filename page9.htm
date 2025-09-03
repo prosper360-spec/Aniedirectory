@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="The Proud Princess.jpg" alt="The Proud Princess (2024)" />
+      <h2>The Proud Princess (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-proud-princess-2024/">Download</a>
+       <button onclick="openModal('The Proud Princess (2024)', 'A proud princess learns humility and love when she disguises herself among the people and discovers what it means to rule with compassion.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="My Neighbour Totoro.jpg" alt="My Neighbour Totoro (1988)" width="50" height="30">
+      <h2>My Neighbour Totoro (1988)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-my-neighbor-totoro-1988/">Download</a>
+       <button onclick="openModal('My Neighbour Totoro (1988)', 'Two young sisters move to the countryside and encounter friendly forest spirits, including the iconic Totoro, in this beloved Studio Ghibli classic.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Barbie The Princess and The Popstar.jpg" alt="Barbie: The Princess and The Popstar (2012)" width="50" height="30">
+      <h2>Barbie: The Princess and The Popstar (2012)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-barbie-the-princess-the-popstar-2012/">Download</a>
+       <button onclick="openModal('Barbie: The Princess and The Popstar (2012)', 'When a princess and a popstar magically switch lives, they discover the value of being true to themselves in this musical adventure.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Justice League Doom.jpg" alt="Justice League Doom (2012)" width="50" height="30">
+      <h2>Justice League Doom (2012)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-justice-league-doom-2012/">Download</a>
+       <button onclick="openModal('Justice League Doom (2012)', 'The Justice League faces destruction when Batman’s secret plans to defeat each member fall into enemy hands in this action-packed thriller.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="The Witcher Siren of the Deep.jpg" alt="The Witcher: Sirens Of The Deep (2025)" width="50" height="30">
+      <h2>The Witcher: Sirens Of The Deep (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-witcher-sirens-of-the-deep-2025/">Download</a>
+       <button onclick="openModal('The Witcher: Sirens Of The Deep (2025)', 'Geralt of Rivia navigates the treacherous underwater kingdom of the sirens, where magic, mystery, and monsters threaten peace across the realms.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Fox And Hare.jpg" alt="Fox And Hare Save The Forest (2024)" width="50" height="30">
+      <h2>Fox And Hare Save The Forest (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-fox-and-hare-save-the-forest-2024/">Download</a>
+       <button onclick="openModal('Fox And Hare Save The Forest (2024)', 'Fox and Hare lead their woodland friends on a mission to stop developers and save their forest home in a warm, ecological adventure.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page8.htm">&laquo; Prev</a>
+  <a href="page10.htm">10</a>
+  <a href="page11.htm">11</a>
+  <a href="page12.htm">12</a>
+  <a href="page10.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+

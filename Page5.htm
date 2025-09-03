@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Kaina Great Snowsea.jpg" alt="Kaina of the Great Snow Sea: Star Stage" />
+      <h2>Kaina of the Great Snow Sea: Star Stage</h2>
+      <a href="https://wildshare.net/e16b3af47edbd26f">Download</a>
+       <button onclick="openModal('Kaina of the Great Snow Sea: Star Stage', 'In a frozen world, Kaina and allies embark on a perilous journey to protect their people and uncover secrets hidden beneath the snow-covered canopy.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Sneaks 2025.jpg" alt="Sneaks (2025)" width="50" height="30">
+      <h2>Sneaks (2025)</h2>
+      <a href="https://wildshare.net/7ddb8f9803350cf1">Download</a>
+       <button onclick="openModal('Sneaks (2025)', 'A young sneaker named Ty escapes the factory to find his missing designer, discovering a secret world of rebellious footwear in a fun-filled adventure.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Iron Within.jpg" alt="Iron Within (2023)" width="50" height="30">
+      <h2>Iron Within (2023)</h2>
+      <a href="https://wildshare.net/9042eae8cdd58593">Download</a>
+       <button onclick="openModal('Iron Within (2023)', 'In a dystopian future, a lone warrior must defy the system and fight for justice using high-tech armor in a world torn by tyranny.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Blood Escape.jpg" alt="Bloody Escape: Bats Out of Hell" width="50" height="30">
+      <h2>Bloody Escape: Bats Out of Hell</h2>
+      <a href="https://wildshare.net/8a7cb00daaca494a">Download</a>
+       <button onclick="openModal('Bloody Escape: Bats Out of Hell', 'An intense anime thriller where vampire fugitives fight against a brutal world that seeks their extinction in a fast-paced, violent, and supernatural escape.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Panda Bear in Africa.jpg" alt=" Panda Bear in Africa" width="50" height="30">
+      <h2> Panda Bear in Africa</h2>
+      <a href="https://wildshare.net/29602107774efa46">Download</a>
+       <button onclick="openModal('Panda Bear in Africa', 'A lively panda travels across the African savannah to rescue his kidnapped friend, discovering the importance of unity and wildlife conservation along the way.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Zoopocalypse.jpg" alt="Night of the Zoopocalypse (2025)" width="50" height="30">
+      <h2>Night of the Zoopocalypse (2025)</h2>
+      <a href="https://wildshare.net/32a8c573ce7d16ab">Download</a>
+       <button onclick="openModal('Night of the Zoopocalypse (2025)', 'After a strange meteor turns zoo animals into zombies, a group of kids must work together to survive and save their town from the undead zoo invasion.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page4.htm">&laquo; Prev</a>
+  <a href="page6.htm">6</a>
+  <a href="page7.htm">7</a>
+  <a href="page8.htm">8</a>
+  <a href="page7.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Niko.jpg" alt="Niko Beyond the Nothern Lights (2024)" />
+      <h2>Niko Beyond the Nothern Lights (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-niko-beyond-the-northern-lights-2024/">Download</a>
+       <button onclick="openModal('Niko Beyond the Nothern Lights (2024)', 'Young reindeer Niko ventures into the magical north to reunite his family and discovers courage, friendship, and his place in the herd.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Barbie.jpg" alt="Barbie and Theresa: Recipe for Friendship (2025)" width="50" height="30">
+      <h2>Barbie and Theresa: Recipe for Friendship (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-barbie-teresa-recipe-for-friendship-2025/">Download</a>
+       <button onclick="openModal('Barbie and Theresa: Recipe for Friendship (2025)', 'Barbie and Teresa join a baking competition but end up learning the true ingredients for friendship—trust, teamwork, and a sprinkle of magic.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Stork's Journey 1.jpg" alt="A Stork’s Journey (2017)" width="50" height="30">
+      <h2>A Stork’s Journey (2017)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-a-storks-journey-2017/">Download</a>
+       <button onclick="openModal('A Stork’s Journey (2017)', 'An orphaned sparrow raised by storks sets off on a migration journey, learning what it means to belong and fly with confidence.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Stork's Journey 2.jpg" alt="A stork’s Journey (2023)" width="50" height="30">
+      <h2>A stork’s Journey (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-a-stocks-journey-2-2023/">Download</a>
+       <button onclick="openModal('A stork’s Journey (2023)', 'Richard the sparrow returns with more flying feats and heartfelt discoveries as he faces a new migration and learns more about his identity.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Sloth Lane.jpg" alt="The Sloth Lane (2024)" width="50" height="30">
+      <h2>The Sloth Lane (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-sloth-lane-2024/">Download</a>
+       <button onclick="openModal('The Sloth Lane (2024)', 'A slow-moving sloth and his energetic jungle pals take a laid-back journey of laughter and learning to save their rainforest from destruction.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Plankton.jpg" alt="Plankton: The Movie (2025)" width="50" height="30">
+      <h2>Plankton: The Movie (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-plankton-the-movie-2025/">Download</a>
+       <button onclick="openModal('Plankton: The Movie (2025)', 'The spotlight turns to Plankton in this spin-off where he sets out on a solo mission to steal the Krabby Patty formula—and accidentally becomes a hero.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page6.htm">&laquo; Prev</a>
+  <a href="page8.htm">8</a>
+  <a href="page9.htm">9</a>
+  <a href="page10.htm">10</a>
+  <a href="page8.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+

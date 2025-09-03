@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Falcon Rising.webp" alt="Falcon Rising (2014)" />
+      <h2>Falcon Rising (2014)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-falcon-rising-2014/">Download</a>
+      <button onclick="openModal('Falcon Rising (2014)', 'Chapman is an ex-marine in Brazil’s slums, battling the yakuza outfit who attacked his sister and left her for dead.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Morgan Killer Doll.jpg" alt="Morgan: Killer Doll (2025)" width="50" height="30">
+      <h2>Morgan: Killer Doll (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-morgan-killer-doll-2025/">Download</a>
+      <button onclick="openModal('Morgan: Killer Doll (2025)', 'Things go awry when Astrid doesn’t share the same feelings for her longtime best friend, Darcy.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Ace (2025).webp" alt="Ace (2025)" width="50" height="30">
+      <h2>Ace (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-ace-2025/">Download</a>
+      <button onclick="openModal('Ace (2025)', 'Kannan, with a past comes to Malaysia to turn over a new leaf. But when he realises that the girl he loves needs money to get out of a difficult situation, he commits a robbery that makes him the target of a fearsome gangster and the girl’s stepfather, an immoral cop.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Final Destination Bloodlines.jpg" alt="Final Destinal Destination Bloodlines (2025)" width="50" height="30">
+      <h2>Final Destinal Destination Bloodlines (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-final-destination-bloodlines-2025/">Download</a>
+      <button onclick="openModal('Final Destinal Destination Bloodlines (2025)', 'Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Phoenician Scheme.webp" alt="The Phoenician Scheme (2025)" width="50" height="30">
+      <h2>The Phoenician Scheme (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-phoenician-scheme-2025/">Download</a>
+      <button onclick="openModal('The Phoenician Scheme (2025)', 'Wealthy businessman Zsa-zsa Korda appoints his only daughter, a nun, as sole heir to his estate. As Korda embarks on a new enterprise, they soon become the target of scheming tycoons, foreign terrorists, and determined assassins.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="28 Weeks Later.jpg" alt="28 Weeks Later (2007)" width="50" height="30">
+      <h2>28 Weeks Later (2007)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-28-weeks-later-2007/">Download</a>
+      <button onclick="openModal('28 Weeks Later (2007)', 'When days turn to weeks… the horror returns. The inhabitants of the British Isles have lost their battle against the onslaught of disease, as the deadly rage virus has killed every citizen there. Six months later, a group of Americans dare to set foot on the Isles, convinced the danger has passed. But it soon becomes all too clear that the scourge continues to live, waiting to pounce on its next victims.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage3.htm">&laquo; Prev</a>
+  <a href="Mpage4.htm">4</a>
+  <a href="Mpage5.htm">5</a>
+  <a href="Mpage6.htm">6</a>
+  <a href="Mpage5.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

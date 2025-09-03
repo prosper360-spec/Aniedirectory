@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Nightshift.jpg" alt="Nightshift (2023)" />
+      <h2>Nightshift (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-night-shift-2023/">Download</a>
+      <button onclick="openModal('Nightshift (2023)', 'While working her first night shift at a remote motel, a woman begins to suspect that the property is haunted.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="The Black Hole.jpg" alt="The Black Hole (2025)" width="50" height="30">
+      <h2>The Black Hole (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-black-hole-2025/">Download</a>
+      <button onclick="openModal('The Black Hole (2025)', 'A comical triptych about residents in an apartment block district who long for a better life. When a black hole mysteriously appears in a lilac bush, they will have to face aliens, a giant spider, and an Austrian in breeches.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Sight Extended.jpg" alt="Sight: Extended (2023)" width="50" height="30">
+      <h2>Sight: Extended (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sight-extended-2023/">Download</a>
+      <button onclick="openModal('Sight: Extended (2023)', 'In a near future dominated by augmented-reality eyepieces, a troubled young man who suffers from agoraphobia experiences an unlikely transformation when he comes across a mysterious app that transforms every facet of his life into a game.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Nocturnal.webp" alt="Nocturnal (2025)" width="50" height="30">
+      <h2>Nocturnal (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-nocturnal-2025/">Download</a>
+      <button onclick="openModal('Nocturnal (2025)', 'Min-tae, a once-notorious gangster who now leads a peaceful retired life, discovers the bloody corpse of his only next of kin: his younger brother Seok-tae. With his brother’s missing wife Moon-young as the prime suspect, Min-tae uncovers a suspicious last phone call between her and a mysterious novelist, sparking a vicious hunt for the truth despite his seemingly deceitful former crime syndicate and the police in hot pursuit.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Catalyst.jpg" alt="Catalyst (2025)" width="50" height="30">
+      <h2>Catalyst (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-catalyst-2025/">Download</a>
+      <button onclick="openModal('Catalyst (2025)', 'Seven men are abducted and held by mysterious masked captors. As the mystery behind their captivity unfolds, they must decide their path: choose one of them to die, or take the leap of faith there may be another way out to save them all.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Devil Returns to Kansas City.jpg" alt="The Devil Comes to Kansas City (2023)" width="50" height="30">
+      <h2>The Devil Comes to Kansas City (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-night-guards-2016/">Download</a>
+      <button onclick="openModal('The Devil Comes to Kansas City (2023)', 'Paul Wilson is a loving dad and husband, making ends meet on his farm in Iowa. When his wife is killed and daughter kidnapped in Kansas City, Paul reveals his past as a mercenary and must travel to the city to get his daughter back')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage11.htm">&laquo; Prev</a>
+  <a href="Mpage12.htm">12</a>
+  <a href="Mpage13.htm">13</a>
+  <a href="Mpage14.htm">14</a>
+  <a href="Mpage13.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

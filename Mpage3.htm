@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Alma and The Wolf.jpg" alt="Alma And The Wolf (2025)" />
+      <h2>Alma And The Wolf (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-alma-the-wolf-2025/">Download</a>
+      <button onclick="openModal('Alma And The Wolf (2025)', 'After a violent animal attack, paranoia spreads through Spiral Creek. But when Deputy Ren Accord gets too close, his son vanishes, and reality begins to fracture.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Muromachi Burai.jpg" alt="Muromachi Burai (2025)" width="50" height="30">
+      <h2>Muromachi Burai (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-muromachi-burai-2025/">Download</a>
+      <button onclick="openModal('Muromachi Burai (2025)', 'Set in war-torn 15th century Kyoto, on the eve of the Onin War, the movie centers on a band of outlaws led by Hyoe (Oizumi) a scoundrel whose lethal sword skills place him at the tip of the spear in a deadly uprising against the corrupt Shogunate and its army, led by former friend-turned-archrival, Doken (Tsutsumi)')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Crown Of Shadows.webp" alt="Crown of Shadows (2025)" width="50" height="30">
+      <h2>Crown of Shadows (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-crown-of-shadows-2025/">Download</a>
+      <button onclick="openModal('Crown of Shadows (2025)', 'The Kingdom of Aberon has fallen into darkness under Queen Ginnarra’s reign since she murdered the King. Exiled and hunted, her brother Prince Elderon joins a rebellion, summoning a dragon to defeat the Queen and the Dark Gods she serves.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Leaving Afghanistan.webp" alt="Leaving Afghanistan (2019)" width="50" height="30">
+      <h2>Leaving Afghanistan (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-leaving-afghanistan-2019/">Download</a>
+      <button onclick="openModal('Leaving Afghanistan (2019)', '1988-1989. The end of the Soviet-Afghan war. The USSR begins its withdrawal from Afghanistan. Soviet General Vasiliev’s son – a pilot named Alexander gets kidnapped by the mujahideen after his airplane crashes.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Cells at Work.jpg" alt="Cells at Work" width="50" height="30">
+      <h2>Cells at Work</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-cells-at-work-2024/">Download</a>
+      <button onclick="openModal('Cells at Work', 'A novice red blood cell and a relentless white blood cell work together to protect their human from invading germs, pathogens and other threats.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Straw (2025).jpg" alt="Straw (2025)" width="50" height="30">
+      <h2>Straw (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-straw-2025/">Download</a>
+      <button onclick="openModal('Straw (2025)', 'A single mother navigates a series of unfortunate events, leading her down an unforeseen path where she becomes embroiled in a situation she never envisioned, finding herself at the center of suspicion in an indifferent world')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage2.htm">&laquo; Prev</a>
+  <a href="Mpage3.htm">3</a>
+  <a href="Mpage4.htm">4</a>
+  <a href="Mpage5.htm">5</a>
+  <a href="Mpage4.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Attack on Titan Roar Of Awakeneing.jpg" alt="Attack on Titan: The Roar of Awakening (2018)" />
+      <h2>Attack on Titan: The Roar of Awakening (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-attack-on-titan-the-roar-of-awakening-2018/">Download</a>
+       <button onclick="openModal('Attack on Titan: The Roar of Awakening (2018)', 'This recap film revisits major events from Season 2 as the Scouts confront monstrous enemies and dark secrets about their world.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Scooby-Doo 13th.jpg" alt="Scooby-Doo! And the Curse of The 13th Ghost (2019)" width="50" height="30">
+      <h2>Scooby-Doo! And the Curse of The 13th Ghost (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-scooby-doo-and-the-curse-of-the-13th-ghost-2019/">Download</a>
+       <button onclick="openModal('Scooby-Doo! And the Curse of The 13th Ghost (2019)', 'Scooby and the gang hunt down the final ghost from a case left unsolved, uncovering spooky surprises along the way.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Flow.jpg" alt="Flow (2024)" width="50" height="30">
+      <h2>Flow (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-flow-2024/">Download</a>
+       <button onclick="openModal('Flow (2024)', 'In a visually poetic tale, a world governed by water, music, and emotion flows with harmony—until one disruption sends ripples through the balance.')">Movie description</button>
+    </article>
+
+      <!-- Card 4 -->
+    <article class="card">
+      <img src="Psycho Pass.jpg" alt="Psycho Pass: PROVIDENCE (2023)" width="50" height="30">
+      <h2>Psycho Pass: PROVIDENCE (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-psycho-pass-providence-2023/">Download</a>
+       <button onclick="openModal('Psycho Pass: PROVIDENCE (2023)', 'A gripping cyberpunk thriller where the truth behind the Sibyl System threatens to unravel society—and the minds sworn to protect it.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page16.htm">&laquo; Prev</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

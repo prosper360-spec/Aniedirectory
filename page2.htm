@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+  <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Phineas Ferb.jpg" alt="Phineas and Ferb the Movie: Candace Against the Universe (2020)" />
+      <h2>Phineas and Ferb the Movie: Candace Against the Universe (2020)</h2>
+      <a href="https://wildshare.net/15ae7844d310480a">Download</a>
+       <button onclick="openModal('Phineas and Ferb the Movie: Candace Against the Universe (2020)', 'Candace is abducted by aliens and finally gets the attention she craves—until Phineas and Ferb blast into space to rescue her in this hilarious sci-fi adventure.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Abominable 2019.webp" alt="Abominable (2019)" width="50" height="30">
+      <h2>Abominable (2019)</h2>
+      <a href="https://wildshare.net/06303df9ca3cb853">Download</a>
+       <button onclick="openModal('Abominable (2019)', 'When a teenage girl discovers a young Yeti on her rooftop, she and her friends embark on a journey across China to reunite the magical creature with its family.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Killer of Killers Predator.jpg" alt="Predator: Killer of Killers (2025)" width="50" height="30">
+      <h2>Predator: Killer of Killers (2025)</h2>
+      <a href="https://wildshare.net/b333e19be37e65a7">Download</a>
+       <button onclick="openModal('Predator: Killer of Killers (2025)', 'A fearsome new Predator lands on Earth, targeting not just humans but rival hunters, unleashing chaos as a deadly game of survival begins.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Brother Bear 2003.jpg" alt="Brother Bear (2003)" width="50" height="30">
+      <h2>Brother Bear 2003</h2>
+      <a href="https://wildshare.net/c010f8bf95211e87">Download</a>
+       <button onclick="openModal('Brother Bear 2003', 'After a young Inuit hunter is transformed into a bear, he embarks on a spiritual journey of redemption and understanding through the eyes of the animal he once hunted.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Brother Bear 2.jpg" alt="Brother Bear 2 (2006)" width="50" height="30">
+      <h2>Brother Bear 2 (2006)</h2>
+      <a href="https://wildshare.net/be734a814a18e40c">Download</a>
+       <button onclick="openModal('Brother Bear 2 (2006)', 'Kenai and his childhood friend Nita embark on a heartfelt journey that tests their bond, reminding them of the meaning of love, loyalty, and transformation.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Raya and the Last Dragon.jpg" alt="Raya And The Last Dragon (2021)" width="50" height="30">
+      <h2>Raya And The Last Dragon (2021)</h2>
+      <a href="https://wildshare.net/66c88b7b1158139e">Download</a>
+       <button onclick="openModal('Raya And The Last Dragon (2021)', 'In a divided land, warrior Raya sets out to find the last dragon and unite the fractured kingdom of Kumandra against an ancient evil force.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="index.htm">&laquo; Prev</a>
+  <a href="page2.htm">2</a>
+  <a href="page3.htm">3</a>
+  <a href="page4.htm">4</a>
+  <a href="Page3.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

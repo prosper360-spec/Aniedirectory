@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Pixels.webp" alt="Pixels (2015)" />
+      <h2>Pixels (2015)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-pixels-2015/">Download</a>
+      <button onclick="openModal('Pixels (2015)', 'Video game experts are recruited by the military to fight 1980s-era video game characters who’ve attacked New York.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Final Destination 2 2003.jpg" alt="Final Destination 2 (2003)" width="50" height="30">
+      <h2>Final Destination 2 (2003)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-final-destination-2-2003-horror/">Download</a>
+      <button onclick="openModal('Final Destination 2 (2003)', 'When Kimberly has a violent premonition of a highway pileup she blocks the freeway, keeping a few others meant to die, safe…Or are they? The survivors mysteriously start dying and it’s up to Kimberly to stop it before she’s next.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Final Destination 3.jpg" alt="Final Destination 3 (2006)" width="50" height="30">
+      <h2>Final Destination 3 (2006)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-final-destination-3-2006-horror/">Download</a>
+      <button onclick="openModal('Final Destination 3 (2006)', 'High school senior Wendy’s premonition of a deadly rollercoaster ride saves her life and a lucky few, but not from death itself — which seeks out those who escaped their fate.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Final Destination 1.jpg" alt="Final Destination (2000)" width="50" height="30">
+      <h2>Final Destination (2000)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-final-destination-2000-horror/">Download</a>
+      <button onclick="openModal('Final Destination (2000)', 'After a teenager has a terrifying vision of him and his friends dying in a plane crash, he prevents the accident only to have Death hunt them down, one by one.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="The Final Destination 4.jpg" alt="The Final Destination (2009)" width="50" height="30">
+      <h2>The Final Destination (2009)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-final-destination-4-2009/">Download</a>
+      <button onclick="openModal('The Final Destination (2009)', 'High school senior Wendy’s premonition of a deadly rollercoaster ride saves her life and a lucky few, but not from death itself — which seeks out those who escaped their fate.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Final Destination 5.jpg" alt="Final Destination 5 (2011)" width="50" height="30">
+      <h2>Final Destination 5 (2011)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-final-destination-5-2011/">Download</a>
+      <button onclick="openModal('Final Destination 5 (2011)', 'Death is just as omnipresent as ever, and is unleashed after one man’s premonition saves a group of coworkers from a terrifying suspension bridge collapse.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage7.htm">&laquo; Prev</a>
+  <a href="Mpage8.htm">8</a>
+  <a href="Mpage9.htm">9</a>
+  <a href="Mpage10.htm">10</a>
+  <a href="Mpage9.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

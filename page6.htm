@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Spongebob.jpg" alt="The Spongebob Movie: Sponge Out  of Water" />
+      <h2>The Spongebob Movie: Sponge Out  of Water</h2>
+      <a href="https://wildshare.net/ece0e7930f79e616">Download</a>
+       <button onclick="openModal('The Spongebob Movie: Sponge Out  of Water', 'SpongeBob and friends leave Bikini Bottom to retrieve a stolen recipe, becoming superheroes on land in a wild and hilarious adventure.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Overlords.jpg" alt="Overlords: The Sacred Kingdom (2024)" width="50" height="30">
+      <h2>Overlords: The Sacred Kingdom (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-overlord-the-sacred-kingdom-2024/">Download</a>
+       <button onclick="openModal('Overlords: The Sacred Kingdom (2024)', 'Dark sorcerer Ainz leads a terrifying assault on a holy kingdom, testing loyalties and pushing nations to the brink in this dark fantasy anime epic.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="GlassWorker.jpg" alt="The GlassWorker (2024)" width="50" height="30">
+      <h2>The GlassWorker (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-glassworker-2024/">Download</a>
+       <button onclick="openModal('The GlassWorker (2024)', 'In a country on the edge of war, a young glassmaker and a general’s daughter navigate love, duty, and the art that binds their lives together.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Attack on Titan.jpg" alt="Attack On Titan: The Last Attack (2024)" width="50" height="30">
+      <h2>Attack On Titan: The Last Attack (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-attack-on-titan-the-last-attack-2024/">Download</a>
+       <button onclick="openModal('Attack On Titan: The Last Attack (2024)', 'The final stand against the Titans unfolds in a climactic battle filled with sacrifice, revelations, and the fight for humanity’s survival.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Paprika.jpg" alt="Paprika (2006)" width="50" height="30">
+      <h2>Paprika (2006)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-paprika-2006/">Download</a>
+       <button onclick="openModal('Paprika (2006)', 'A dream therapist uses a device to enter patients’ minds, but when it’s stolen, reality and dreams collide in a psychedelic psychological thriller.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Batman Vs Yakuza.jpg" alt="Batman Ninja Vs Yakuza League (2025)" width="50" height="30">
+      <h2>Batman Ninja Vs Yakuza League (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-batman-ninja-vs-yakuza-league-2025/">Download</a>
+       <button onclick="openModal('Batman Ninja Vs Yakuza League (2025)', 'Batman returns to feudal Japan to battle a corrupted Yakuza version of the Justice League in this action-packed samurai showdown.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page5.htm">&laquo; Prev</a>
+  <a href="page7.htm">7</a>
+  <a href="page8.htm">8</a>
+  <a href="page9.htm">9</a>
+  <a href="page7.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+

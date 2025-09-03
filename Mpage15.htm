@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Avengers age of Ultron.jpg" alt="Avengers: Age of Ultron (2015)" />
+      <h2>Avengers: Age of Ultron (2015)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-avengers-age-of-ultron-2015/">Download</a>
+      <button onclick="openModal('Avengers: Age of Ultron (2015)', 'When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Avengers Infinity War.jpg" alt="Avengers: Infinity War (2018)" width="50" height="30">
+      <h2>Avengers: Infinity War (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-avengers-infinity-war-2018/">Download</a>
+      <button onclick="openModal('Avengers: Infinity War (2018)', 'As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Avengers Endgame..jpg" alt="Avengers: Endgame (2019)" width="50" height="30">
+      <h2>Avengers: Endgame (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-avengers-endgame-2019/">Download</a>
+      <button onclick="openModal('Avengers: Endgame (2019)', 'After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos’ actions and restore order to the universe once and for all, no matter what consequences may be in store.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Going Places 2025.jpg" alt="Going Places (2025)" width="50" height="30">
+      <h2>Going Places (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-going-places-2025/">Download</a>
+      <button onclick="openModal('Going Places (2025)', 'After covering up a hit and run on the way to their valedictory desert getaway, three high school graduates face the true test of their friendship when they become entangled in a deadly crime ring imbroglio.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Captain Nova.jpg" alt="Captain Nova (2021)" width="50" height="30">
+      <h2>Captain Nova (2021)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-captain-nova-2021/">Download</a>
+      <button onclick="openModal('Captain Nova (2021)', 'A fighter pilot travels back in time to save the future world from environmental disaster, but a side-effect turns her young again and no-one takes her seriously.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="The Squachers.jpg" alt="The Squactchers (2025)" width="50" height="30">
+      <h2>The Squactchers (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-squatchers-2025/">Download</a>
+      <button onclick="openModal('The Squactchers (2025)', 'A group of friends, known as “The Squatchers”, set out to fulfill their dream of finding Bigfoot, only to wind up on a heart-pounding quest for survival against the unknown.This is one adventure you have to see to believe.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage14.htm">&laquo; Prev</a>
+  <a href="Mpage16.htm">16</a>
+  <a href="Mpage16.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

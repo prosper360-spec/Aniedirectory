@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="The Lion King.jpg" alt="The Lion King (2019)" />
+      <h2>The Lion King (2019)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-lion-king-2019/">Download</a>
+       <button onclick="openModal('The Lion King (2019)', 'In this realistic remake, Simba embarks on a journey of destiny and redemption after the tragic loss of his father, King Mufasa.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="An Almost Christmas Story.jpg" alt="An Almost Christmas Story" width="50" height="30">
+      <h2>An Almost Christmas Story</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-an-almost-christmas-story-2024/">Download</a>
+       <button onclick="openModal('An Almost Christmas Story', 'A young elf’s mistake puts Christmas in jeopardy, and he must team up with a girl on Earth to make things right just in time.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Little Emma.jpg" alt="Little Emma (2024)" width="50" height="30">
+      <h2>Little Emma (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-little-emma-2024/">Download</a>
+       <button onclick="openModal('Little Emma (2024)', 'Emma, a shy young girl with a big imagination, finds her voice when she befriends a magical creature that changes her world.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Attack On Titan Chronicles.jpg" alt="Attack on Titan: Chronicle (2020)" width="50" height="30">
+      <h2>Attack on Titan: Chronicle (2020)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-attack-on-titan-chronicle-2020/">Download</a>
+       <button onclick="openModal('Attack on Titan: Chronicle (2020)', 'This special film summarizes the first three seasons of the epic saga, capturing key battles, betrayals, and Titan-sized twists.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Captain Underpants.jpg" alt="Captain Underpants: The First Epic Movie (2017)" width="50" height="30">
+      <h2>Captain Underpants: The First Epic Movie (2017)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-captain-underpants-the-first-epic-movie-2017/">Download</a>
+       <button onclick="openModal('Captain Underpants: The First Epic Movie (2017)', 'Two prank-loving kids hypnotize their principal into thinking he’s a goofy superhero in this hilarious and action-packed comedy.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Spellbound.jpg" alt="Spellbound (2024)" width="50" height="30">
+      <h2>Spellbound (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-spellbound-2024/">Download</a>
+       <button onclick="openModal('Spellbound (2024)', 'A young girl must break a curse that turns her kingdom into stone, discovering ancient magic and the strength within herself.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page13.htm">&laquo; Prev</a>
+  <a href="page15.htm">15</a>
+  <a href="page16.htm">16</a>
+  <a href="page17.htm">17</a>
+  <a href="page15.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0af;
+}
+
+header nav a {
+  color: #ccc;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #0af;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #181818;
+  border-bottom: 2px solid #0af;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #0af;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+/* Cards */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0af;
+}
+
+
+.card img {
+  width: 200px;      /* or 32px or 64px depending on your desired icon size */
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card h2 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+ .pagination {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .pagination a,
+  .pagination span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .pagination a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  .pagination span {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+    box-shadow: none;
+  }
+
+  .pagination a[style*="font-weight: bold"] {
+    background-color: #0056b3;
+  }
+
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: rgb(7, 7, 7);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0d0c0c;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #0056b3;
+}

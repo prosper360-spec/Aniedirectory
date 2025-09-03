@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Lord Of The Rings Rohirrim.jpg" alt="Lord of The Rings: The War of The Rohirrim (2024)" />
+      <h2>Lord of The Rings: The War of The Rohirrim (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-lord-of-the-rings-the-war-of-the-rohirrim-2024/">Download</a>
+       <button onclick="openModal('Lord of The Rings: The War of The Rohirrim (2024)', 'A legendary king defends Rohan from dark forces in this animated prequel set 200 years before the events of The Two Towers.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Wallace and Gromit.jpg" alt="Wallace and Grommit: Vengeance Most Fowl (2024)" width="50" height="30">
+      <h2>Wallace and Grommit: Vengeance Most Fowl (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-wallace-gromit-vengeance-most-fowl-2024/">Download</a>
+       <button onclick="openModal('Wallace and Grommit: Vengeance Most Fowl (2024)', 'Feathers McGraw returns with a dastardly plan, and it’s up to Wallace and Gromit to save the day in this delightful claymation comeback.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Soul.jpg" alt="Soul (2020)" width="50" height="30">
+      <h2>Soul (2020)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-soul-2020/">Download</a>
+       <button onclick="openModal('Soul (2020)', 'After an accident separates his soul from his body, a jazz musician journeys through the afterlife to rediscover what it means to truly live.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Shimmy.jpg" alt="Shimmy The First Monkey King" width="50" height="30">
+      <h2>Shimmy The First Monkey King</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-shimmy-the-first-monkey-king-2023/">Download</a>
+       <button onclick="openModal('Shimmy The First Monkey King', 'A mischievous young monkey discovers his powers and destiny, setting him on a mythical path to become the legendary Monkey King.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Batman Unlimited Mechs Vs Mutants.jpg" alt="Batman Unlimited: Mechs Vs. Mutants (2016)" width="50" height="30">
+      <h2>Batman Unlimited: Mechs Vs. Mutants (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-batman-unlimited-mechs-vs-mutants-2016/">Download</a>
+       <button onclick="openModal('Batman Unlimited: Mechs Vs. Mutants (2016)', 'Batman and his team pilot powerful mechs to stop mutated villains threatening Gotham in a tech-fueled action adventure.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Batman Unlimted Monster Mayhem.jpg" alt="Batman Unlimited: Monster Mayhem (2015)" width="50" height="30">
+      <h2>Batman Unlimited: Monster Mayhem (2015)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-batman-unlimited-monster-mayhem-2015/">Download</a>
+       <button onclick="openModal('Batman Unlimited: Monster Mayhem (2015)', 'The Joker unleashes cyber monsters to wreak havoc on Gotham, and Batman must rally his team to stop the digital destruction.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page12.htm">&laquo; Prev</a>
+  <a href="page14.htm">14</a>
+  <a href="page15.htm">15</a>
+  <a href="page16.htm">16</a>
+  <a href="page14.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

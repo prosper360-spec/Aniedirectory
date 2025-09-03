@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+  <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Magician's Elephant.jpg" alt="The Magician’s Elephant 2023" />
+      <h2>The Magician’s Elephant (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-magicians-elephant-2023/">Download</a>
+       <button onclick="openModal('The Magician’s Elephant (2023)', 'A young orphan follows a magical prophecy involving an elephant to find his long-lost sister in a tale of wonder and belief.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Batman Gotham Knight.jpg" alt="Batman: Gotham Knight (2008)" width="50" height="30">
+      <h2>Batman: Gotham Knight (2008)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-batman-gotham-knight-2008/">Download</a>
+       <button onclick="openModal('Batman: Gotham Knight (2008)', 'Told in six interwoven stories, Batman takes on criminals, ninjas, and personal demons in a dark anime-styled chapter of his legend.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Moana 2.jpg" alt="Moana 2" width="50" height="30">
+      <h2>Moana 2</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-moana-2-2024/">Download</a>
+       <button onclick="openModal('Moana 2', 'Moana sets sail once again to explore distant seas and forge new alliances as a looming threat puts her island and legacy in danger.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Noah's Ark.jpg" alt="Noah’s Ark " width="50" height="30">
+      <h2>Noah’s Ark</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-noahs-ark-2024/">Download</a>
+       <button onclick="openModal('Noah’s Ark', 'A modern animated retelling of the biblical tale, this version of Noah’s Ark brings animals, faith, and fun together in a vibrant new style.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Barbie in the 12.jpg" alt="Barbie In The 12 Dancing Princesses (2006)" width="50" height="30">
+      <h2>Barbie In The 12 Dancing Princesses (2006)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-barbie-in-the-12-dancing-princesses-2006/">Download</a>
+       <button onclick="openModal('Barbie In The 12 Dancing Princesses (2006)', 'Barbie stars as Princess Genevieve, one of twelve sisters who discover a secret world of magical dancing while fighting to save their kingdom.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Rebellious.jpg" alt="Rebellious (2024)" width="50" height="30">
+      <h2>Rebellious (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-rebellious-2024/">Download</a>
+       <button onclick="openModal('Rebellious (2024)', 'In a future where creativity is outlawed, a bold teen leads a rebellion through music and art, inspiring a revolution against oppression')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page7.htm">&laquo; Prev</a>
+  <a href="page9.htm">9</a>
+  <a href="page10.htm">10</a>
+  <a href="page11.htm">11</a>
+  <a href="page9.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+

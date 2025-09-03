@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="Animations.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+      <!-- Movie Description Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="HitPig.jpg" alt="HitPig! (2024)" />
+      <h2>HitPig! (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-hitpig-2024/">Download</a>
+       <button onclick="openModal('HitPig! (2024)', 'A grumpy bounty-hunting pig finds his soft side when he must protect a tech-savvy elephant in this unlikely buddy comedy.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Mickey.jpg" alt="Mickey and The Very Many Christmasses (2024)" width="50" height="30">
+      <h2>Mickey and The Very Many Christmasses (2024)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-mickey-and-the-very-many-christmases-2024/">Download</a>
+       <button onclick="openModal('Mickey and The Very Many Christmasses (2024)', 'Mickey Mouse relives different versions of Christmas across timelines, learning timeless lessons of joy, generosity, and togetherness.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="The Grinch.jpg" alt="The Grinch (2018)" width="50" height="30">
+      <h2>The Grinch (2018)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-grinch-2018/">Download</a>
+       <button onclick="openModal('The Grinch (2018)', 'The Grinch hatches a plan to ruin Christmas for Whoville—until a little girl’s kindness melts his icy heart.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="The Inseperables.jpg" alt="The Inseparables (2023)" width="50" height="30">
+      <h2>The Inseparables (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-inseparables-2023/">Download</a>
+       <button onclick="openModal('The Inseparables (2023)', 'Two mismatched toys come to life and embark on a daring journey across the city to find their lost child owner.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Spark a Space Tail.jpg" alt="Spark: A Space Tail (2016)" width="50" height="30">
+      <h2>Spark: A Space Tail (2016)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-spark-a-space-tail-2016/">Download</a>
+       <button onclick="openModal('Spark: A Space Tail (2016)', 'A teenage monkey and his misfit crew rise against an evil general to reclaim their planet in this animated space adventure.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Eight Crazy Nights.jpg" alt="Eight Crazy Nights (2002)" width="50" height="30">
+      <h2>Eight Crazy Nights (2002)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-eight-crazy-nights-2002/">Download</a>
+       <button onclick="openModal('Eight Crazy Nights (2002)', 'A grumpy troublemaker finds redemption through community service in this adult animated comedy with a holiday twist.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Page15.htm">&laquo; Prev</a>
+  <a href="page17.htm">17</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

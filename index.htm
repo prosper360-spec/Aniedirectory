@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Animation/Cartoon Category</h1>
+    <p>Browse the latest animated content</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Kpop Demon  hunters.jpg" alt="Animation 1" />
+      <h2>Kpop Demon Hunters</h2>
+      <a href="https://wildshare.net/1db5bf445828eac6">Download</a>
+      <button onclick="openModal('Kpop Demon Hunters', 'A stylish action animation where Kpop stars battle demonic threats.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Iron toon.jpg" alt="The Invincible Iron Man 2007" width="50" height="30">
+      <h2>The Invincible Iron Man 2007</h2>
+      <a href="https://wildshare.net/6334e5c5f795382c">Download</a>
+      <button onclick="openModal('The Invincible Iron Man 2007', 'After awakening an ancient force, billionaire inventor Tony Stark must suit up as Iron Man and battle mystical enemies to save the world from destruction')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Spider.jpeg" alt="Spiderman Accross the Spiderverse" width="50" height="30">
+      <h2>Spiderman Accross the Spiderverse</h2>
+      <a href="https://wildshare.net/8396f25e7e62ed8c">Download</a>
+      <button onclick="openModal('Spiderman Accross the Spiderverse', 'Miles Morales swings back into action across the multiverse, teaming up with Gwen Stacy and a team of Spider-People to face a threat bigger than any single dimension.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Spider-Man Into the SpiderVerse.jpg" alt="Spiderman Into the Spiderverse" width="50" height="30">
+      <h2>Spiderman Into the Spiderverse</h2>
+      <a href="https://wildshare.net/456aae132b280bab">Download</a>
+      <button onclick="openModal('Spiderman Into the Spiderverse', 'Teenager Miles Morales discovers he’s not the only Spider-Man when a rip in the multiverse brings together web-slingers from alternate realities to stop a catastrophic threat.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Suicide Squad-Hell to Pay.jpg" alt="Suicide Squad: Hell To Pay" width="50" height="30">
+      <h2>Suicide Squad: Hell To Pay (2018)</h2>
+      <a href="https://wildshare.net/776878e187dc090f">Download</a>
+      <button onclick="openModal('Suicide Squad: Hell To Pay (2018)', 'Task Force X is sent on a dangerous mission to retrieve a mystical item, facing betrayal, bloodshed, and inner demons along the way in this gritty animated action film.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Masameer Junior.jpg" alt="Masameer Junior" width="50" height="30">
+      <h2>Masameer Junior</h2>
+      <a href="https://wildshare.net/81804ce857e53681">Download</a>
+      <button onclick="openModal('Masameer Junior', 'A spinoff of the popular Saudi animated series, this film follows a group of young friends tackling mischief, moral lessons, and modern-day adventures with humor and heart.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="index.htm">&laquo; Prev</a>
+  <a href="page2.htm">2</a>
+  <a href="page3.htm">3</a>
+  <a href="page4.htm">4</a>
+  <a href="page2.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

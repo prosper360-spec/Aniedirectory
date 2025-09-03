@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Trapped.jpg" alt="Animation 1" />
+      <h2>Trapped (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-trapped-2025/">Download</a>
+      <button onclick="openModal('Trapped (2025)', 'In a desolate border town in 1995, a notorious bandit escapes with a treasure map and unleashes chaos by rallying dozens of outlaws. Cut off from help, three lone officers must face overwhelming odds in a deadly standoff where survival demands sacrifice.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Sherlock Holmes (2009).jpg" alt="download-sherlock-holmes-2009" width="50" height="30">
+      <h2>Sherlock Holmes (2009)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sherlock-holmes-2009/">Download</a>
+      <button onclick="openModal('Sherlock Holmes (2009)', 'Eccentric consulting detective Sherlock Holmes and Doctor John Watson battle to bring down a new nemesis and unravel a deadly plot that could destroy England.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Sherlock Holmes a Game of Shadows.jpg" alt="Sherlock Holmes A Game of Shadows." width="50" height="30">
+      <h2>Sherlock Holmes A Game of Shadows.</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-sherlock-holmes-a-game-of-shadows-2011/">Download</a>
+      <button onclick="openModal('Sherlock Holmes A Game of Shadows.', 'There is a new criminal mastermind at large (Professor Moriarty) and not only is he Holmes’ intellectual equal, but his capacity for evil and lack of conscience may give him an advantage over the detective.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="Blade Runner 1982.jpg" alt="Blade Runner (1982)" width="50" height="30">
+      <h2>Blade Runner (1982)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-blade-runner-1982/">Download</a>
+      <button onclick="openModal('Blade Runner (1982)', 'In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Blade Runner 2017.jpg" alt="Blade Runner (2017)" width="50" height="30">
+      <h2>Blade Runner (2017)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-blade-runner-2049-2017/">Download</a>
+      <button onclick="openModal('Blade Runner (2017)', 'Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what’s left of society into chaos. K’s discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="Blade-1.jpg" alt="Blade (1998)" width="50" height="30">
+      <h2>Blade (1998)</h2>
+      <a href="https://wildshare.net/81804ce857e53681">Download</a>
+      <button onclick="openModal('Blade (1998)', 'Blade, who is part-vampire and part-mortal, becomes a vampire hunter to protect human beings. He prevents vampires from taking control over the human race.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Movies.htm">&laquo; Prev</a>
+  <a href="Mpage2.htm">2</a>
+  <a href="page3.htm">3</a>
+  <a href="page4.htm">4</a>
+  <a href="Mpage2.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>

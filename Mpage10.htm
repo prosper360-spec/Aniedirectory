@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anie Directory.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Close when clicking outside the modal content
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div class="logo">Anie Directory</div>
+    <nav>
+      <a href="index.htm">Home</a>
+      <a href="Movies.htm">Movies</a>
+      <a href="index.htm">Animations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Movie Category</h1>
+    <p>Browse the latest Movies</p>
+  </section>
+
+  <main class="grid">
+    <!-- Movie Description Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Movie Title</h2>
+    <p id="modalDescription">Movie description.</p>
+  </div>
+</div>
+
+    <!-- Card 1 -->
+    <article class="card">
+      <img src="Fast X.jpg" alt="Fast X (2023)" />
+      <h2>Fast X (2023)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-fast-x-2023/">Download</a>
+      <button onclick="openModal('Fast X (2023)', 'Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they’ve ever faced: A terrifying threat emerging from the shadows of the past who’s fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.')">Movie description</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <img src="Message in a bottle..jpg" alt="Message in A Bottle (2025)" width="50" height="30">
+      <h2>Message in A Bottle (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-message-in-a-bottle-2025/">Download</a>
+      <button onclick="openModal('Message in A Bottle (2025)', 'A renowned sommelier finds a way to communicate with her past self in an attempt to correct the mistakes that have shaped her life. However, each message sent triggers unexpected consequences, altering not only her present but also the fates of those around her.')">Movie description</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <img src="Myth of Man.jpg" alt="Myth of Man (2025)" width="50" height="30">
+      <h2>Myth of Man (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-myth-of-man-2025/">Download</a>
+      <button onclick="openModal('Myth of Man (2025)', 'Ella embarks on a whimsical odyssey between life and death, convinced she has received a message from her creator.')">Movie description</button>
+    </article>
+
+     <!-- Card 4 -->
+     <article class="card">
+      <img src="With You in the Future.jpg" alt="With You in The Future (2025)" width="50" height="30">
+      <h2>With You in The Future (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-with-you-in-the-future-2025/">Download</a>
+      <button onclick="openModal('With You in The Future (2025)', 'The story follows Carlos and Elena as they are about to sign their divorce. Just before executing it, an unexpected and eccentric visitor appears to offer them a second chance: a trip back in time to 1994, the year they met. Thus begins an adventure in which they will try to change their past, facing funny and touching situations while trying to avoid falling for each other. ')">Movie description</button>
+    </article>
+
+      <!-- Card 5 -->
+     <article class="card">
+      <img src="Demon's Bride.jpg" alt="The Demon’s Bride (2025)" width="50" height="30">
+      <h2>The Demon’s Bride (2025)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-the-demons-bride-2025/">Download</a>
+      <button onclick="openModal('The Demon’s Bride (2025)', 'When her daughter is severely injured, a desperate mother makes a deal with a demon to save her — but the price will have to be paid in blood.')">Movie description</button>
+    </article>
+
+      <!-- Card 6 -->
+     <article class="card">
+      <img src="iBoy.webp" alt="iBoy (2017)" width="50" height="30">
+      <h2>iBoy (2017)</h2>
+      <a href="https://vdl.np-downloader.com/sdm_downloads/download-iboy-2017/">Download</a>
+      <button onclick="openModal('iBoy (2017)', 'After an accident, Tom wakes from a coma to discover that fragments of his smart phone have been embedded in his head, and worse, that returning to normal teenage life is impossible because he has developed a strange set of super powers.')">Movie description</button>
+    </article>
+
+    
+    <!-- Pagination -->
+<div class="pagination" style="text-align:center; margin: 30px 0;">
+  <a href="Mpage9.htm">&laquo; Prev</a>
+  <a href="Mpage10.htm">10</a>
+  <a href="Mpage11.htm">11</a>
+  <a href="Mpage12.htm">12</a>
+  <a href="Mpage11.htm">Next &raquo;</a>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ani Directory. All rights reserved.</p>
+  </footer>
+</body>
+</html>
